@@ -1,7 +1,7 @@
 from flask import Blueprint
 from flask import jsonify
 
-from hotspot_helper.miner_command import get_peerbook
+from hotspot_helper.miner_client import get_peerbook
 
 
 VIEWS = Blueprint('views', __name__)

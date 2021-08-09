@@ -16,7 +16,7 @@ Start the Miner Docker Container
 ```bash
 mkdir miner_data
 docker pull quay.io/team-helium/miner:latest-amd64
-docker run --volume miner_data:/var/data --name miner quay.io/team-helium/miner:latest-amd64
+docker run --volume miner_data:/var/data -p 4467:4467 --name miner quay.io/team-helium/miner:latest-amd64
 ```
 
 Run the API
