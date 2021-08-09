@@ -1,1 +1,0 @@
-Hotspot Helper Service
