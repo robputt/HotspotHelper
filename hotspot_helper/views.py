@@ -1,4 +1,5 @@
 from flask import Blueprint
+from flask import jsonify
 
 from hotspot_helper.miner_command import get_peerbook
 
@@ -19,4 +20,4 @@ def connect():
 @VIEWS.route('/peerbook', methods=['GET'])
 def peerbook():
     peerbook = get_peerbook()
-    return peerbook
+    return jsonify({'peers': peerbook})
